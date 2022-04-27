@@ -17,7 +17,7 @@ const Menu = props => {
 
 
     React.createElement("li", null, /*#__PURE__*/
-    React.createElement("a", { href: "#about", onClick: props.toggleMenu }, "ABOUT")), /*#__PURE__*/
+    React.createElement("a", { href: "#about", onClick: props.toggleMenu }, "SOBRE")), /*#__PURE__*/
 
 
 
@@ -27,7 +27,7 @@ const Menu = props => {
 
 
     React.createElement("li", null, /*#__PURE__*/
-    React.createElement("a", { href: "#contact", onClick: props.toggleMenu }, "CONTACT"))), /*#__PURE__*/
+    React.createElement("a", { href: "#contact", onClick: props.toggleMenu }, "CONTATO"))), /*#__PURE__*/
 
 
 
@@ -48,9 +48,9 @@ const Nav = props => {
     React.createElement(React.Fragment, null, /*#__PURE__*/
     React.createElement("nav", { id: "navbar" }, /*#__PURE__*/
     React.createElement("div", { className: "nav-wrapper" }, /*#__PURE__*/
-    React.createElement("p", { className: "brand" }, "yago", /*#__PURE__*/
+    React.createElement("p", { className: "brand" }, "daniel", /*#__PURE__*/
 
-    React.createElement("strong", null, "est\xE9vez")), /*#__PURE__*/
+    React.createElement("strong", null, "Watanabe")), /*#__PURE__*/
 
     React.createElement("a", {
       onClick: props.toggleMenu,
@@ -78,15 +78,15 @@ const Header = props => {
     React.createElement("div", { className: "moon" }), /*#__PURE__*/
     React.createElement("div", { className: "container" }, /*#__PURE__*/
     React.createElement("h1", null, /*#__PURE__*/
-    React.createElement("span", { className: "line" }, "I do"), /*#__PURE__*/
-    React.createElement("span", { className: "line" }, "graphic design"), /*#__PURE__*/
+    React.createElement("span", { className: "line" }, "Programador"), /*#__PURE__*/
+    React.createElement("span", { className: "line" }, "que adora desafios"), /*#__PURE__*/
     React.createElement("span", { className: "line" }, /*#__PURE__*/
-    React.createElement("span", { className: "color" }, "&"), " code.")), /*#__PURE__*/
+    React.createElement("span", { className: "color" }, "&"), " aprender.")), /*#__PURE__*/
 
 
     React.createElement("div", { className: "buttons" }, /*#__PURE__*/
-    React.createElement("a", { href: "#projects" }, "my portfolio"), /*#__PURE__*/
-    React.createElement("a", { href: "#contact", className: "cta" }, "get in touch")))));
+    React.createElement("a", { href: "#projects" }, "portfolio"), /*#__PURE__*/
+    React.createElement("a", { href: "#contact", className: "cta" }, "entre em contato")))));
 
 
 
@@ -106,47 +106,63 @@ const About = props => {
     React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
     React.createElement("article", null, /*#__PURE__*/
     React.createElement("div", { className: "title" }, /*#__PURE__*/
-    React.createElement("h3", null, "Who's this guy?"), /*#__PURE__*/
+    React.createElement("h3", null, "Quem é esse cara?"), /*#__PURE__*/
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
 
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
-    React.createElement("h4", { className: "subtitle" }, "My name is Yago."), /*#__PURE__*/
-    React.createElement("p", null, "I am a web developer and UX designer based in the beautiful west coast of Spain, Galicia."), /*#__PURE__*/
+    React.createElement("h4", { className: "subtitle" }, "Meu nome é Daniel Takeshi."), /*#__PURE__*/
+    React.createElement("p", null, "Eu sou um programador e engenheiro brasileiro, atualmente moro em Curitiba - PR."), /*#__PURE__*/
 
+    React.createElement("p", null, "Como hobby eu gosto de fazer trilhas, viajar, jogar futebol e encontrar com amigos e família."), /*#__PURE__*/
 
+    React.createElement("p", null, "Eu adoro resolver desafios e aprender, trabalhando na área de tecnologias industriais tive que aprender novas tecnologias todos os meses para criar uma solução para os clientes. Que variavam de processamento de imagem à comunicação em protocolos e meios físicos distintos.")), /*#__PURE__*/
+    
 
-    React.createElement("p", null, "I really enjoy solving problems as well as making things pretty and easy to use. I can't stop learning new things; the more, the better. I also love photography, a hobby I'm taking along since the good old film cameras. Oh, and rice with milk; I have a passion for rice with milk!")), /*#__PURE__*/
+    React.createElement("div", { className: "title" }, /*#__PURE__*/
+    React.createElement("h3", null, "Qual é a formação acadêmica?"), /*#__PURE__*/
 
+    React.createElement("p", { className: "separator" })), /*#__PURE__*/
 
+    React.createElement("div", { className: "desc full" }, /*#__PURE__*/
+    React.createElement("p", null, "Graduado em Engenharia Elétrica pela Universidade Federal do Paraná (UFPR) em 2015."), /*#__PURE__*/
 
+    React.createElement("p", null, "Pós graduação em Automação Industrial pela Universidade Tecnológica do Paraná em 2019."), /*#__PURE__*/
+
+    React.createElement("p", null, "Inglês Fluente na escola ClassMate, Francês básico na Aliança Francesa, Japonês básico pelo Bunkyou e Espanhol Básico pelo CELIM.")), /*#__PURE__*/
 
 
 
     React.createElement("div", { className: "title" }, /*#__PURE__*/
-    React.createElement("h3", null, "What does he do?"), /*#__PURE__*/
+    React.createElement("h3", null, "O que ele faz?"), /*#__PURE__*/
     React.createElement("p", { className: "separator" })), /*#__PURE__*/
 
     React.createElement("div", { className: "desc" }, /*#__PURE__*/
-    React.createElement("h4", { className: "subtitle" }, "I'm a programmer."), /*#__PURE__*/
-    React.createElement("p", null, "For the front-end I usually work with Javascript, either standalone or including popular frameworks like ReactJS and VueJS. I also make the web pretty by using Sass, CSS and, whenever needed, any of their friends: Bootstrap, Bulma, etc."), /*#__PURE__*/
+    React.createElement("h4", { className: "subtitle" }, "Sou um programador."), /*#__PURE__*/
+    React.createElement("p", null, "Desenvolvimento de sistemas embarcados com C++, Python ou Lua. Com projetos como Sistemas de Visão 2D e 3D, leitor RFID, comunicação com protocolos industriais, nuvem de pontos de scanner de segurança para AGVs, etc."), /*#__PURE__*/
 
 
 
 
-    React.createElement("p", null, "For the back-end I also work with Javascript (NodeJS, Express, MongoDB, etc). But, of course, whenever the project requires PHP, I do PHP as well (Wordpress, Laravel, etc).")), /*#__PURE__*/
+    React.createElement("p", null, "No desenvolvimento web foram utilizados templates do Themeforest e Codepen para o Front-end (CSS e HTML5) e para o Backend PHP (Laravel) e JS. Já utilizei CMS Wordpress, Shopify e Wix. Realizando o gerenciamento do website, pelo CPanel, Resolvedor DNS, e-mails e domínio."), /*#__PURE__*/
+
+    React.createElement("p", null, "Conhecimento básico como administrador de sistemas de Windows Server 2016, Windows 10 LTSB, Ubuntu e CPanel Linux."), /*#__PURE__*/
+
+    React.createElement("p", null, "Para automação das tarefas diárias, já programei em VBA, Powershell, Microsoft Power Apps, AutoIT e batch file."), /*#__PURE__*/
+
+    React.createElement("p", null, "Outros projetos como programação em Ladder e STL (CLP),  ")), /*#__PURE__*/
+
 
 
 
 
     React.createElement("div", { className: "desc" }, /*#__PURE__*/
-    React.createElement("h4", { className: "subtitle" }, "Also a designer."), /*#__PURE__*/
-    React.createElement("p", null, "I feel comfortable working with many Adobe products. Photoshop, Illustrator, InDesign, Lightroom or Xd are some kind of industry standards and I love working with them. I'm not limited to them, though: Gimp, Inkscape or Figma are also very valid applications that I've been working with."), /*#__PURE__*/
+    React.createElement("h4", { className: "subtitle" }, "Também um engenheiro."), /*#__PURE__*/
+    React.createElement("p", null, "Trabalhei com tecnologias novas e projetos industriais, creio que a experiência de projetos na engenharia não é diferente da programação. Por exemplo, ao construir uma fábrica nova você inicia pelas utilidades (energia, água, insumos) e depois o processo utiliza o produto das utilidades. Na programação o mesmo ocorre, ao fazer um website é necessário primeiro definir as utilidades (email, mapa, APIs, banco de dados) para depois programar as funcionalidades."), /*#__PURE__*/
+
+    React.createElement("p", null, "Na manutenção também é análogo, em que devemos realizá-la com cautela e de maneira organizada, comunicando entre todos os setores, pois a fábrica não pode parar. O mesmo ocorre na manutenção de aplicativos ou sistemas operando."), /*#__PURE__*/
 
 
-
-
-
-    React.createElement("p", null, "User interfaces, brochures, books, branding... You name it! As I mentioned, creating pretty things is particularly important for me."))))));
+    React.createElement("p", null, "A experiência de programação de sistemas embarcados forneceu uma visão boa da otimização, pois em muitas aplicações o tempo de processamento deve ser menor do que 50 ms e o custo do processador baixo. O contato direto com clientes e vendedores me ensinou a me comunicar melhor."))))));
 
 
 
