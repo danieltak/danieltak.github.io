@@ -113,7 +113,7 @@ const About = props => {
     React.createElement("h4", { className: "subtitle" }, "Meu nome é Daniel Takeshi."), /*#__PURE__*/
     React.createElement("p", null, "Eu sou um programador e engenheiro brasileiro, atualmente moro em Curitiba - PR."), /*#__PURE__*/
 
-    React.createElement("p", null, "Como hobby eu gosto de fazer trilhas, viajar, jogar futebol e encontrar com amigos e família."), /*#__PURE__*/
+    React.createElement("p", null, "Como hobby eu gosto de fazer trilhas, viajar, jogar futebol, ler no Kindle e encontrar com amigos e família."), /*#__PURE__*/
 
     React.createElement("p", null, "Eu adoro resolver desafios e aprender, trabalhando na área de tecnologias industriais tive que aprender novas tecnologias todos os meses para criar uma solução para os clientes. Que variavam de processamento de imagem à comunicação em protocolos e meios físicos distintos.")), /*#__PURE__*/
     
@@ -128,7 +128,7 @@ const About = props => {
 
     React.createElement("p", null, "Pós graduação em Automação Industrial pela Universidade Tecnológica do Paraná em 2019."), /*#__PURE__*/
 
-    React.createElement("p", null, "Inglês Fluente na escola ClassMate, Francês básico na Aliança Francesa, Japonês básico pelo Bunkyou e Espanhol Básico pelo CELIM.")), /*#__PURE__*/
+    React.createElement("p", null, "Inglês Fluente na escola ClassMate, Francês básico na Aliança Francesa, Japonês básico pelo Bunkyou e Espanhol Básico pelo CELIN.")), /*#__PURE__*/
 
 
 
@@ -143,13 +143,13 @@ const About = props => {
 
 
 
-    React.createElement("p", null, "No desenvolvimento web foram utilizados templates do Themeforest e Codepen para o Front-end (CSS e HTML5) e para o Backend PHP (Laravel) e JS. Já utilizei CMS Wordpress, Shopify e Wix. Realizando o gerenciamento do website, pelo CPanel, Resolvedor DNS, e-mails e domínio."), /*#__PURE__*/
+    React.createElement("p", null, "No desenvolvimento web foram utilizados templates do Themeforest e Codepen para o Front-end (CSS e HTML5) e para o Backend PHP (Laravel) e JS. Realizando o gerenciamento do website pelo CPanel, Resolvedor DNS (Cloudflare), e-mails e domínio. Já utilizei CMS Wordpress, Shopify e Wix."), /*#__PURE__*/
 
     React.createElement("p", null, "Conhecimento básico como administrador de sistemas de Windows Server 2016, Windows 10 LTSB, Ubuntu e CPanel Linux."), /*#__PURE__*/
 
     React.createElement("p", null, "Para automação das tarefas diárias, já programei em VBA, Powershell, Microsoft Power Apps, AutoIT e batch file."), /*#__PURE__*/
 
-    React.createElement("p", null, "Outros projetos como programação em Ladder e STL (CLP),  ")), /*#__PURE__*/
+    React.createElement("p", null, "Outros conhecimentos: programação em Ladder e STL (CLP), tradução de projetos Open Source no Transifex, tradução do regex101.com, conhecimento sobre os softwares Matlab, Photoshop, Adobe Fireworks, GIMP, Inkscape e After Effects, programação de protótipos no Arduino e Raspberry PI, escrever TCC na norma ABNT em LaTeX.")), /*#__PURE__*/
 
 
 
@@ -163,12 +163,6 @@ const About = props => {
 
 
     React.createElement("p", null, "A experiência de programação de sistemas embarcados forneceu uma visão boa da otimização, pois em muitas aplicações o tempo de processamento deve ser menor do que 50 ms e o custo do processador baixo. O contato direto com clientes e vendedores me ensinou a me comunicar melhor."))))));
-
-
-
-
-
-
 
 
 };
@@ -186,11 +180,15 @@ const Project = props => {
     react: 'fab fa-react',
     vue: 'fab fa-vuejs',
     d3: 'far fa-chart-bar',
+    laravel: 'fab fa-laravel',
+    php: 'fab fa-php',
     node: 'fab fa-node' };
 
 
   const link = props.link || 'http://';
   const repo = props.repo || 'http://';
+  const linktxt = props.linktxt;
+  const repotxt = props.repotxt;
 
   return /*#__PURE__*/(
     React.createElement("div", { className: "project" }, /*#__PURE__*/
@@ -208,10 +206,10 @@ const Project = props => {
 
     props.children, /*#__PURE__*/
     React.createElement("div", { className: "buttons" }, /*#__PURE__*/
-    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, "View source ", /*#__PURE__*/
+    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, linktxt, /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" })), /*#__PURE__*/
 
-    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, "Try it Live ", /*#__PURE__*/
+    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, repotxt, /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" }))))));
 
 
@@ -231,12 +229,10 @@ const Projects = props => {
     React.createElement("section", { id: "projects" }, /*#__PURE__*/
     React.createElement("div", { className: "projects-container" }, /*#__PURE__*/
     React.createElement("div", { className: "heading" }, /*#__PURE__*/
-    React.createElement("h3", { className: "title" }, "My Works"), /*#__PURE__*/
+    React.createElement("h3", { className: "title" }, "Meus Projetos"), /*#__PURE__*/
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
-    React.createElement("p", { className: "subtitle" }, "Here's a list of ", /*#__PURE__*/
-    React.createElement("u", null, "most"), " of the projects I've been working on lately. All of these were built during my coding camp adventure on",
-    ' ', /*#__PURE__*/
-    React.createElement("a", { href: "https://www.freecodecamp.org/", target: "_blank", rel: "noopener noreferrer" }, "freeCodeCamp"), ", where I've been coding for almost 7 months non-stop until I completed all the projects required to get my Full-Stack Developer certification.")), /*#__PURE__*/
+    React.createElement("p", { className: "subtitle" }, "Aqui está uma lista de ", /*#__PURE__*/
+    React.createElement("u", null, "parte"), " dos projetos que trabalhei, muitos não possuem acesso ao código fonte por questões de confidencialidade.")), /*#__PURE__*/
 
 
 
@@ -245,226 +241,19 @@ const Projects = props => {
 
     React.createElement("div", { className: "projects-wrapper" }, /*#__PURE__*/
     React.createElement(Project, {
-      title: "Anonymous Message Board.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/AnonMsgBoard.jpg',
-      tech: "js css react node",
-      link: "https://yagoestevez-anon-msg-board.glitch.me/",
-      repo: "https://github.com/yagoestevez/anonymous-message-board" }, /*#__PURE__*/
+      title: "Marketplace",
+      img: 'img/Pegameds.jpg',
+      tech: "js css php laravel",
+      linktxt: "Website",
+      link: "https://pegameds.com.br",
+      repotxt: "Heevo",
+      repo: "https://heevo.life" }, /*#__PURE__*/
 
-    React.createElement("small", null, "Built using Node, Express, MongoDB, CSS + Bulma, React.js and React Router."), /*#__PURE__*/
-
-
+    React.createElement("small", null, "PHP, Laravel, JS, HTML5 e CSS."), /*#__PURE__*/
     React.createElement("p", null, "This is a full-stack website that I made which lets the users read and post anonymous messages and replies.")), /*#__PURE__*/
 
 
 
-
-    React.createElement(Project, {
-      title: "Stock Price Checker.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/StockPriceChecker.jpg',
-      tech: "js node css",
-      link: "https://yagoestevez-stock-price-checker.glitch.me/",
-      repo: "https://github.com/yagoestevez/fcc-stock-price-checker" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, MongoDB, JS + jQuery + Axios, CSS + Bootstrap and Pug."), /*#__PURE__*/
-
-
-    React.createElement("p", null, "Another full-stack website to check the current value of any requested stock in the market.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Personal Library.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/PersonalLibrary.jpg',
-      tech: "js node css",
-      link: "https://yagoestevez-personal-library.glitch.me/",
-      repo: "https://github.com/yagoestevez/fcc-personal-library" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap and Pug."), /*#__PURE__*/
-    React.createElement("p", null, "A full-stack website to store book titles and comments to each book into a remote database.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Issue Tracker.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/IssueTracker.jpg',
-      tech: "js node css",
-      link: "https://yagoestevez-issue-tracker.glitch.me/",
-      repo: "https://github.com/yagoestevez/fcc-issue-tracker" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, MongoDB, JS + jQuery, CSS + Bootstrap and Pug."), /*#__PURE__*/
-    React.createElement("p", null, "Yet another full-stack app to save and manage technical issues to be fixed.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Metric-Imperial Converter.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/MetricImperialConverter.jpg',
-      tech: "js node css",
-      link: "https://yagoestevez-metric-imperial-converter.glitch.me/",
-      repo: "https://github.com/yagoestevez/fcc-metric-imperial-converter/" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, JS + jQuery, CSS + Bootstrap and Pug."), /*#__PURE__*/
-    React.createElement("p", null, "Another full-stack for converting values from the Internation System of Units (Metric) into the imperial units.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "URL Shortener Microservice.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Cortala.jpg',
-      tech: "js node css",
-      link: "https://cortala.glitch.me/example",
-      repo: "https://github.com/yagoestevez/cortala" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, CSS + Bootstrap and Pug."), /*#__PURE__*/
-    React.createElement("p", null, "A microservice which takes a raw URL and makes it a short link to make it easy to sent it through the Internet.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Exercise Tracker.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/ExerciseTracker.jpg',
-      tech: "js vue node css",
-      link: "https://yagoestevez-exercise-tracker.glitch.me",
-      repo: "https://github.com/yagoestevez/exercise-tracker" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using Node, Express, VueJS + Vue Router and CSS + Bootstrap."), /*#__PURE__*/
-    React.createElement("p", null, "A service which lets the users save their daily exercise (or anything) into a log for them to check it later.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Bar Chart.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/BarChart.jpg',
-      tech: "js d3 css",
-      link: "https://codepen.io/yagoestevez/full/wxjmrB/",
-      repo: "https://github.com/yagoestevez/fcc-barchart" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using CSS, JS and D3.js."), /*#__PURE__*/
-    React.createElement("p", null, "A bar chart representing the evolution of the US GDP.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Treemap Diagram.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TreemapDiagram.jpg',
-      tech: "js d3 css",
-      link: "https://codepen.io/yagoestevez/full/bjZygz/",
-      repo: "https://github.com/yagoestevez/fcc-treemap-diagram" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using CSS, JS and D3.js."), /*#__PURE__*/
-    React.createElement("p", null, "A treemap diagram representing groups of pledges and sales from a particular category.")), /*#__PURE__*/
-
-
-
-    React.createElement(Project, {
-      title: "Choropleth Map.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/ChoroplethMap.jpg',
-      tech: "js d3 css",
-      link: "https://codepen.io/yagoestevez/full/NBeaWK/",
-      repo: "https://github.com/yagoestevez/fcc-choropleth-map" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using CSS, JS and D3.js."), /*#__PURE__*/
-    React.createElement("p", null, "A choropleth map representing the educational attainment by county in the U.S.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Random Quoting Machine.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/QuotingMachine.jpg',
-      tech: "js vue css",
-      link: "https://codepen.io/yagoestevez/full/bxgEyd/",
-      repo: "https://github.com/yagoestevez/random-quoting-machine" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using VueJS, Axios and CSS + Bootstrap."), /*#__PURE__*/
-    React.createElement("p", null, "A random quoting app which retrieves pictures and quotes from two different APIs.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Calculator.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Calculator.jpg',
-      tech: "js react css",
-      link: "https://codepen.io/yagoestevez/full/ERVONM/",
-      repo: "https://github.com/yagoestevez/the-calcoolator" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using React and CSS."), /*#__PURE__*/
-    React.createElement("p", null, "A project on which I built a virtual calculator with its usual features.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Pomodoro Timer.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TomateTimer.jpg',
-      tech: "js react css",
-      link: "https://codepen.io/yagoestevez/full/dqJGVa",
-      repo: "https://github.com/yagoestevez/tomate-time" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using React, CSS and lots of SVG."), /*#__PURE__*/
-    React.createElement("p", null, "A cute and animated Pomodoro clock to help the users improve their productivity.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "TicTacToe Game.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/TicTacToe.jpg',
-      tech: "js react css",
-      link: "https://codepen.io/yagoestevez/full/KRevzB/",
-      repo: "https://github.com/yagoestevez/TicTacToe" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using React, CSS and SVG."), /*#__PURE__*/
-    React.createElement("p", null, "A TicTacToe game with a basic AI algorithm made for the legacy front-end projects on FreeCodeCamp.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Twitch Clone.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Twitch.jpg',
-      tech: "js vue sass",
-      link: "https://codepen.io/yagoestevez/full/xjwVPq/" }, /*#__PURE__*/
-
-
-    React.createElement("small", null, "Built using VueJS, Axios and Scss."), /*#__PURE__*/
-    React.createElement("p", null, "Simple Twitch clone using the new Twitch Helix API and made for the legacy front-end projects on FreeCodeCamp.")), /*#__PURE__*/
-
-
-
-
-    React.createElement(Project, {
-      title: "Weather App.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/WeatherApp.jpg',
-      tech: "js vue css",
-      link: "https://codepen.io/yagoestevez/full/zWbGmZ/" }, /*#__PURE__*/
-
-
-    React.createElement("small", null, "Built using VueJS, Axios and CSS."), /*#__PURE__*/
-    React.createElement("p", null, "App that present the users with the current local weather for their location.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Tribute.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Tribute.jpg',
-      tech: "js sass",
-      link: "https://codepen.io/yagoestevez/full/aaaOxL/",
-      repo: "https://github.com/yagoestevez/tribute-to-aaron-swartz" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using vanilla Javascript and Scss."), /*#__PURE__*/
-    React.createElement("p", null, "Tribute page to Aaron Swartz, a static website built with SCSS and plain Javascript.")), /*#__PURE__*/
-
-
-
-    React.createElement(Project, {
-      title: "Survey Form.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/SurveyForm.jpg',
-      tech: "js sass",
-      link: "https://codepen.io/yagoestevez/full/bjVgjX/",
-      repo: "https://github.com/yagoestevez/membership-form" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using vanilla Javascript and Scss."), /*#__PURE__*/
-    React.createElement("p", null, "An animated survey form.")), /*#__PURE__*/
-
-    React.createElement(Project, {
-      title: "Landing Page Example.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/LandingPage.jpg',
-      tech: "js sass",
-      link: "https://codepen.io/yagoestevez/full/pOBLeK/",
-      repo: "https://github.com/yagoestevez/tomate-timer-landing-page" }, /*#__PURE__*/
-
-    React.createElement("small", null, "Built using vanilla Javascript and Scss."), /*#__PURE__*/
-    React.createElement("p", null, "A landing page for the Pomodoro Timer I made (shown previously in this section).")), /*#__PURE__*/
 
     React.createElement(Project, {
       title: "Technical Documentation Page.",
