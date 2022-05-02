@@ -215,7 +215,6 @@ const Project = props => {
 
 
 
-
 };
 
 
@@ -237,7 +236,9 @@ const Projects = props => {
 
 
 
-
+    /*
+      HeeVo e Pegameds
+    */
 
     React.createElement("div", { className: "projects-wrapper" }, /*#__PURE__*/
     React.createElement(Project, {
@@ -250,28 +251,89 @@ const Projects = props => {
       repo: "https://heevo.life" }, /*#__PURE__*/
 
     React.createElement("small", null, "PHP, Laravel, JS, HTML5 e CSS."), /*#__PURE__*/
-    React.createElement("p", null, "This is a full-stack website that I made which lets the users read and post anonymous messages and replies.")), /*#__PURE__*/
+    React.createElement("p", null, "Website full-stack de marketplace de farmácias, com visão computacional, algoritmos de pesquisa, geolocalização, AdminLTE e integração com meio de pagamento.")), /*#__PURE__*/
 
 
-
+    /*
+      Ogame
+    */
 
     React.createElement(Project, {
-      title: "Technical Documentation Page.",
-      img: 'https://raw.githubusercontent.com/yagoestevez/fcc-portfolio/master/src/Components/Projects/Images/Documentify.jpg',
-      tech: "js react css",
-      link: "https://codepen.io/yagoestevez/full/QxOLKX/",
-      repo: "https://github.com/yagoestevez/documentify" }, /*#__PURE__*/
+      title: "Ogame Galaxy Tool.",
+      img: 'img/Ogame.jpg',
+      tech: "php js css",
+      linktxt: "Website",
+      link: "http://www.galaxytool.eu/",
+      repotxt: "Source",
+      repo: "https://github.com/supermopf/galaxytool" }, /*#__PURE__*/
 
-    React.createElement("small", null, "Built using React and CSS."), /*#__PURE__*/
-    React.createElement("p", null, "A technical documentation page made for a little React library I published on NPM."))))));
+    React.createElement("small", null, "PHP, JS e CSS."), /*#__PURE__*/
+    React.createElement("p", null, "Implementação de ferramenta auxiliar para o jogo Ogame.")),
 
+    /*
+      Projetos Engenharia
+    */
+    
+    React.createElement("div", { className: "heading" }, /*#__PURE__*/
+    React.createElement("h3", { className: "title" }, "Projetos Engenharia"), /*#__PURE__*/
+    React.createElement("p", { className: "separator" })), /*#__PURE__*/
 
+    React.createElement("div", {className: "flexcards-wrapper"},
 
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-1', name:'card', defaultChecked: true }),
+    React.createElement("label", {className: "content", htmlFor: 'card-1'},
+    React.createElement("span", { className: "icon" }, /*#__PURE__*/
+    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement("h3", {className: "card-title"}, 
+    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
+    'Serra da Freita, Vale de Cambra, Portugal')),
+  
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-2', name:'card'}),
+    React.createElement("label", {className: "content", htmlFor: 'card-2'},
+    React.createElement("span", { className: "icon" }, /*#__PURE__*/
+    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement("h3", {className: "card-title"}, 
+    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
+    'Serra da Freita, Vale de Cambra, Portugal')),
 
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-3', name:'card'}),
+    React.createElement("label", {className: "content", htmlFor: 'card-3'},
+    React.createElement("span", { className: "icon" }, /*#__PURE__*/
+    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement("h3", {className: "card-title"}, 
+    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
+    'Serra da Freita, Vale de Cambra, Portugal')),
 
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-4', name:'card' }),
+    React.createElement("label", {className: "content", htmlFor: 'card-4'},
+    React.createElement("span", { className: "icon" }, /*#__PURE__*/
+    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement("h3", {className: "card-title"}, 
+    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
+    'Serra da Freita, Vale de Cambra, Portugal')),
+
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-5', name:'card'}),
+    React.createElement("label", {className: "content", htmlFor: 'card-5'},
+    React.createElement("span", { className: "icon" }, /*#__PURE__*/
+    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement("h3", {className: "card-title"}, 
+    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
+    'Serra da Freita, Vale de Cambra, Portugal')),
+
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-6', name:'card'}),
+    React.createElement("label", {className: "content", htmlFor: 'card-6'},
+    React.createElement("span", { className: "icon" }, /*#__PURE__*/
+    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement("h3", {className: "card-title"}, 
+    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
+    'Serra da Freita, Vale de Cambra, Portugal')),
+  
+  
+    )))));
 
 
 };
+
 
 
 
@@ -376,7 +438,6 @@ const SocialLinks = props => {
 };
 
 
-
 /***********************
   Main Component
  ***********************/
@@ -397,7 +458,9 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
     });}
 
   render() {
+
     return /*#__PURE__*/(
+      
       React.createElement(React.Fragment, null, /*#__PURE__*/
       React.createElement(Menu, { toggleMenu: this.toggleMenu, showMenu: this.state.menuState }), /*#__PURE__*/
       React.createElement(Nav, { toggleMenu: this.toggleMenu, showMenu: this.state.menuState }), /*#__PURE__*/
@@ -405,8 +468,11 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
       React.createElement(About, null), /*#__PURE__*/
       React.createElement(Projects, null), /*#__PURE__*/
       React.createElement(Contact, null), /*#__PURE__*/
-      React.createElement(Footer, null)));
 
+      React.createElement(Footer, null))
+
+      );
+      
 
   }
 
