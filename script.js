@@ -182,7 +182,10 @@ const Project = props => {
     d3: 'far fa-chart-bar',
     laravel: 'fab fa-laravel',
     php: 'fab fa-php',
-    node: 'fab fa-node' };
+    node: 'fab fa-node',
+    markdown: 'fa-brands fa-markdown',
+    linux: 'fa-brands fa-linux',
+    python: 'fa-brands fa-python' };
 
 
   const link = props.link || 'http://';
@@ -206,10 +209,10 @@ const Project = props => {
 
     props.children, /*#__PURE__*/
     React.createElement("div", { className: "buttons" }, /*#__PURE__*/
-    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, linktxt, /*#__PURE__*/
+    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, linktxt, /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" })), /*#__PURE__*/
 
-    React.createElement("a", { href: link, target: "_blank", rel: "noopener noreferrer" }, repotxt, /*#__PURE__*/
+    React.createElement("a", { href: repo, target: "_blank", rel: "noopener noreferrer" }, repotxt, /*#__PURE__*/
     React.createElement("i", { className: "fas fa-external-link-alt" }))))));
 
 
@@ -251,7 +254,41 @@ const Projects = props => {
       repo: "https://heevo.life" }, /*#__PURE__*/
 
     React.createElement("small", null, "PHP, Laravel, JS, HTML5 e CSS."), /*#__PURE__*/
-    React.createElement("p", null, "Website full-stack de marketplace de farmácias, com visão computacional, algoritmos de pesquisa, geolocalização, AdminLTE e integração com meio de pagamento.")), /*#__PURE__*/
+    React.createElement("p", null, "Desenvolvimento full-stack de marketplace de farmácias, com visão computacional, algoritmos de pesquisa, geolocalização, AdminLTE e integração com meio de pagamento.")), /*#__PURE__*/
+
+
+    /*
+      Web Crawler Bulario
+    */
+
+      React.createElement(Project, {
+        title: "Web Crawler Bulário",
+        img: 'img/web-crawler.png',
+        tech: "python linux",
+        linktxt: "Selenium",
+        link: "https://www.selenium.dev/",
+        repotxt: "Bulário - Anvisa",
+        repo: "https://consultas.anvisa.gov.br/#/bulario/" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "Python, Linux e Selenium."), /*#__PURE__*/
+      React.createElement("p", null, "Criação de um Web crawler (spider) com o Python Selenium no SO Ubuntu para o download de bulas no bulário da Anvisa.")), /*#__PURE__*/
+
+
+    /*
+      Awesome LMS Point Cloud
+    */
+
+      React.createElement(Project, {
+        title: "Awesome LiDAR Point Cloud",
+        img: 'img/Registration_outdoor.png',
+        tech: "markdown",
+        linktxt: "Source",
+        link: "https://github.com/danieltak/awesome-sick-lms-point-cloud",
+        repotxt: "Produto",
+        repo: "https://www.sick.com/br/en/detection-and-ranging-solutions/2d-lidar-sensors/c/g91900" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "Markdown."), /*#__PURE__*/
+      React.createElement("p", null, "Criação de lista Awesome do Github a partir de estudos sobre os sensores 2D LiDAR da SICK Ag para a criação de nuvens de pontos.")), /*#__PURE__*/
 
 
     /*
