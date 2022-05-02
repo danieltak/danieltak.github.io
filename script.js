@@ -273,6 +273,22 @@ const Projects = props => {
       React.createElement("small", null, "Python, Linux e Selenium."), /*#__PURE__*/
       React.createElement("p", null, "Criação de um Web crawler (spider) com o Python Selenium no SO Ubuntu para o download de bulas no bulário da Anvisa.")), /*#__PURE__*/
 
+    /*
+      LMS SICK Example
+    */
+
+      React.createElement(Project, {
+        title: "2D LiDAR LMS Telegram Example",
+        img: 'img/PCLVisualizer.png',
+        tech: "python",
+        linktxt: "Source",
+        link: "https://github.com/danieltak/py-LMS-sick-telegram-example",
+        repotxt: "Telegram Listing",
+        repo: "https://cdn.sick.com/media/docs/7/27/927/technical_information_telegram_listing_ranging_sensors_lms1xx_lms5xx_tim2xx_tim5xx_tim7xx_lms1000_mrs1000_mrs6000_nav310_ld_oem15xx_ld_lrs36xx_lms4000_en_im0045927.pdf" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "Python."), /*#__PURE__*/
+      React.createElement("p", null, "Desenvolvimento de um programa de exemplo de Telegrams do sensor 2D LiDAR LMSxxx da Sick Ag para obter nuvens de pontos com a biblioteca PCL. Os dados são recebidos em HEX por comunicação Ethernet TCP/IP em coordenadas polares.")), /*#__PURE__*/
+
 
     /*
       Awesome LMS Point Cloud
