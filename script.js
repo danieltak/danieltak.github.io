@@ -115,7 +115,7 @@ const About = props => {
 
     React.createElement("p", null, "Como hobby eu gosto de fazer trilhas, viajar, jogar futebol, ler no Kindle e encontrar com amigos e família."), /*#__PURE__*/
 
-    React.createElement("p", null, "Eu adoro resolver desafios e aprender, trabalhando na área de tecnologias industriais tive que aprender novas tecnologias todos os meses para criar uma solução para os clientes. Que variavam de processamento de imagem à comunicação em protocolos e meios físicos distintos.")), /*#__PURE__*/
+    React.createElement("p", null, "Eu adoro resolver desafios e aprender com eles. Durante a minha experiência na área de tecnologias industriais, tive a oportunidade de aplicá-las para criar soluções para as empresas e seus clientes, sendo necessário aprender novos conhecimentos constantemente. Que variavam de processamento de imagem à comunicação em protocolos e meios físicos distintos.")), /*#__PURE__*/
     
 
     React.createElement("div", { className: "title" }, /*#__PURE__*/
@@ -128,7 +128,7 @@ const About = props => {
 
     React.createElement("p", null, "Pós graduação em Automação Industrial pela Universidade Tecnológica do Paraná em 2019."), /*#__PURE__*/
 
-    React.createElement("p", null, "Inglês Fluente na escola ClassMate, Francês básico na Aliança Francesa, Japonês básico pelo Bunkyou e Espanhol Básico pelo CELIN.")), /*#__PURE__*/
+    React.createElement("p", null, "Inglês Fluente (Escola ClassMate), Francês básico (Aliança Francesa), Japonês básico (Escola Bunkyou) e Espanhol Básico (Centro de Línguas e Interculturalidade da UFPR - CELIN UFPR).")), /*#__PURE__*/
 
 
 
@@ -185,7 +185,8 @@ const Project = props => {
     node: 'fab fa-node',
     markdown: 'fa-brands fa-markdown',
     linux: 'fa-brands fa-linux',
-    python: 'fa-brands fa-python' };
+    python: 'fa-brands fa-python',
+    html: 'fa-brands fa-html5' };
 
 
   const link = props.link || 'http://';
@@ -247,7 +248,7 @@ const Projects = props => {
     React.createElement(Project, {
       title: "Marketplace",
       img: 'img/Pegameds.jpg',
-      tech: "js css php laravel",
+      tech: "php laravel js html css",
       linktxt: "Website",
       link: "https://pegameds.com.br",
       repotxt: "Heevo",
@@ -256,6 +257,23 @@ const Projects = props => {
     React.createElement("small", null, "PHP, Laravel, JS, HTML5 e CSS."), /*#__PURE__*/
     React.createElement("p", null, "Desenvolvimento full-stack de marketplace de farmácias, com visão computacional, algoritmos de pesquisa, geolocalização, AdminLTE e integração com meio de pagamento.")), /*#__PURE__*/
 
+
+    /*
+      Slicer de Frango
+    */
+
+      React.createElement(Project, {
+        title: "Slicer 3D",
+        img: 'img/slicer.jpg',
+        tech: "js css html",
+        linktxt: "Source",
+        link: "https://github.com/danieltak/3DSlicer",
+        repotxt: "Application Page",
+        repo: "https://www.sick.com/br/en/industries/food-and-beverage/food-process/meat-and-cheese-slicer/optimization-of-the-cutting-process-using-3d-vision/c/p514222" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "Lua, TS, JS, HTML5 e CSS."), /*#__PURE__*/
+      React.createElement("p", null, "Desenvolvimento de um slicer 3D de carnes, para obter o volume e local de corte a fim de otimizar o corte de frangos, criando um subproduto de tiras de frango. Programa feito em Lua, CSS e HTML no AppStudio da SICK Ag.")), /*#__PURE__*/
+  
 
     /*
       Web Crawler Bulario
@@ -291,20 +309,20 @@ const Projects = props => {
 
 
     /*
-      Awesome LMS Point Cloud
+      RFU RFID
     */
 
       React.createElement(Project, {
-        title: "Awesome LiDAR Point Cloud",
-        img: 'img/Registration_outdoor.png',
-        tech: "markdown",
+        title: "RFID RFU63x Telegram Example",
+        img: 'img/RFID_logo.jpg',
+        tech: "python",
         linktxt: "Source",
-        link: "https://github.com/danieltak/awesome-sick-lms-point-cloud",
+        link: "https://github.com/danieltak/py-rfu-telegram-sick",
         repotxt: "Produto",
-        repo: "https://www.sick.com/br/en/detection-and-ranging-solutions/2d-lidar-sensors/c/g91900" }, /*#__PURE__*/
+        repo: "https://www.sick.com/br/pt/solucoes-de-identificacao/rfid/rfu63x/rfu630-13100/p/p258283" }, /*#__PURE__*/
   
-      React.createElement("small", null, "Markdown."), /*#__PURE__*/
-      React.createElement("p", null, "Criação de lista Awesome do Github a partir de estudos sobre os sensores 2D LiDAR da SICK Ag para a criação de nuvens de pontos.")), /*#__PURE__*/
+      React.createElement("small", null, "Python."), /*#__PURE__*/
+      React.createElement("p", null, "Desenvolvimento de um programa de exemplo de Telegrams para o leitura/escrita de Tags RFID do modelo RFU63x da Sick Ag pelo protocolo de comunicação Ethernet TCP/IP.")), /*#__PURE__*/
 
 
     /*
@@ -323,6 +341,24 @@ const Projects = props => {
     React.createElement("small", null, "PHP, JS e CSS."), /*#__PURE__*/
     React.createElement("p", null, "Implementação de ferramenta auxiliar para o jogo Ogame.")),
 
+
+    /*
+      Awesome LMS Point Cloud
+    */
+
+      React.createElement(Project, {
+        title: "Awesome LiDAR Point Cloud",
+        img: 'img/Registration_outdoor.png',
+        tech: "markdown",
+        linktxt: "Source",
+        link: "https://github.com/danieltak/awesome-sick-lms-point-cloud",
+        repotxt: "Produto",
+        repo: "https://www.sick.com/br/en/detection-and-ranging-solutions/2d-lidar-sensors/c/g91900" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "Markdown."), /*#__PURE__*/
+      React.createElement("p", null, "Criação de lista Awesome do Github a partir de estudos sobre os sensores 2D LiDAR da SICK Ag para a criação de nuvens de pontos.")), /*#__PURE__*/
+
+
     /*
       Projetos Engenharia
     */
@@ -336,50 +372,50 @@ const Projects = props => {
     React.createElement('input', { className: 'radio', type: 'radio', id: 'card-1', name:'card', defaultChecked: true }),
     React.createElement("label", {className: "content", htmlFor: 'card-1'},
     React.createElement("span", { className: "icon" }, /*#__PURE__*/
-    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement('i', {className:'fa-solid fa-truck'})),
     React.createElement("h3", {className: "card-title"}, 
-    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
-    'Serra da Freita, Vale de Cambra, Portugal')),
+    React.createElement("span", { className: "subtitle" }, 'Projeto, instalação e configuração'), /*#__PURE__*/
+    'Leitor de códigos 1D e 2D em distribuidor logístico')),
   
     React.createElement('input', { className: 'radio', type: 'radio', id: 'card-2', name:'card'}),
     React.createElement("label", {className: "content", htmlFor: 'card-2'},
     React.createElement("span", { className: "icon" }, /*#__PURE__*/
-    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement('i', {className:'fa-solid fa-burst'})),
     React.createElement("h3", {className: "card-title"}, 
-    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
-    'Serra da Freita, Vale de Cambra, Portugal')),
+    React.createElement("span", { className: "subtitle" }, 'Projeto, instalação e configuração'), /*#__PURE__*/
+    'Anti-colisão de Portainers com sensor Radar')),
 
     React.createElement('input', { className: 'radio', type: 'radio', id: 'card-3', name:'card'}),
     React.createElement("label", {className: "content", htmlFor: 'card-3'},
     React.createElement("span", { className: "icon" }, /*#__PURE__*/
-    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement('i', {className:'fa-solid fa-check'})),
     React.createElement("h3", {className: "card-title"}, 
-    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
-    'Serra da Freita, Vale de Cambra, Portugal')),
+    React.createElement("span", { className: "subtitle" }, 'Projeto, instalação e programação'), /*#__PURE__*/
+    'Leitura e validação de código único na indústria farmacêutica')),
 
-    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-4', name:'card' }),
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-4', name:'card'}),
     React.createElement("label", {className: "content", htmlFor: 'card-4'},
     React.createElement("span", { className: "icon" }, /*#__PURE__*/
     React.createElement('i', {className:'fas fa-sun'})),
     React.createElement("h3", {className: "card-title"}, 
-    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
-    'Serra da Freita, Vale de Cambra, Portugal')),
+    React.createElement("span", { className: "subtitle" }, 'Programação'), /*#__PURE__*/
+    'Máquina de Fenação (Haying)')),
 
-    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-5', name:'card'}),
+    React.createElement('input', { className: 'radio', type: 'radio', id: 'card-5', name:'card' }),
     React.createElement("label", {className: "content", htmlFor: 'card-5'},
     React.createElement("span", { className: "icon" }, /*#__PURE__*/
-    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement('i', {className:'fa-solid fa-bolt'})),
     React.createElement("h3", {className: "card-title"}, 
-    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
-    'Serra da Freita, Vale de Cambra, Portugal')),
+    React.createElement("span", { className: "subtitle" }, 'Projeto e montagem'), /*#__PURE__*/
+    'Painéis elétricos de automação e emergência')),
 
     React.createElement('input', { className: 'radio', type: 'radio', id: 'card-6', name:'card'}),
     React.createElement("label", {className: "content", htmlFor: 'card-6'},
     React.createElement("span", { className: "icon" }, /*#__PURE__*/
-    React.createElement('i', {className:'fas fa-sun'})),
+    React.createElement('i', {className:'fa-solid fa-atom'})),
     React.createElement("h3", {className: "card-title"}, 
-    React.createElement("span", { className: "subtitle" }, '@hed'), /*#__PURE__*/
-    'Serra da Freita, Vale de Cambra, Portugal')),
+    React.createElement("span", { className: "subtitle" }, 'Projeto e Programação'), /*#__PURE__*/
+    'Sistema SDCD 800xA da ABB para Automação de Processos')),
   
   
     )))));
