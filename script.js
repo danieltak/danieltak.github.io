@@ -113,7 +113,7 @@ const About = props => {
     React.createElement("h4", { className: "subtitle" }, "Meu nome é Daniel Takeshi."), /*#__PURE__*/
     React.createElement("p", null, "Eu sou um programador e engenheiro brasileiro, atualmente moro em Curitiba - PR."), /*#__PURE__*/
 
-    React.createElement("p", null, "Como hobby eu gosto de fazer trilhas, viajar, jogar futebol, ler no Kindle e encontrar com amigos e família."), /*#__PURE__*/
+    React.createElement("p", null, "Como hobby eu gosto de fazer trilhas, viajar, jogar futebol, ler e encontrar com amigos e família."), /*#__PURE__*/
 
     React.createElement("p", null, "Eu adoro resolver desafios e aprender com eles. Durante a minha experiência na área de tecnologias industriais, tive a oportunidade de aplicá-las para criar soluções para as empresas e seus clientes, sendo necessário aprender novos conhecimentos constantemente. Que variavam de processamento de imagem à comunicação em protocolos e meios físicos distintos.")), /*#__PURE__*/
     
@@ -340,6 +340,23 @@ const Projects = props => {
 
     React.createElement("small", null, "PHP, JS e CSS."), /*#__PURE__*/
     React.createElement("p", null, "Implementação de ferramenta auxiliar para o jogo Ogame.")),
+
+
+    /*
+      Q&A Vanilla
+    */
+
+      React.createElement(Project, {
+        title: "Q&A Vanilla",
+        img: 'img/vanilla.png',
+        tech: "php js html css",
+        linktxt: "Source",
+        link: "https://github.com/vanilla/vanilla",
+        repotxt: "Open Source Community",
+        repo: "https://open.vanillaforums.com/" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "PHP, JS, HTML e CSS."), /*#__PURE__*/
+      React.createElement("p", null, "Implementação de base de conhecimento Open Source Vanilla Forums.")),
 
 
     /*
