@@ -186,7 +186,8 @@ const Project = props => {
     markdown: 'fa-brands fa-markdown',
     linux: 'fa-brands fa-linux',
     python: 'fa-brands fa-python',
-    html: 'fa-brands fa-html5' };
+    html: 'fa-brands fa-html5',
+    cplusplus: 'fab fa-cuttlefish' };
 
 
   const link = props.link || 'http://';
@@ -323,6 +324,40 @@ const Projects = props => {
   
       React.createElement("small", null, "Python."), /*#__PURE__*/
       React.createElement("p", null, "Desenvolvimento de um programa de exemplo de Telegrams para o leitura/escrita de Tags RFID do modelo RFU63x da Sick Ag pelo protocolo de comunicação Ethernet TCP/IP.")), /*#__PURE__*/
+
+
+    /*
+      TCC Graduação
+    */
+
+    React.createElement(Project, {
+      title: "Plataforma Análise de Sistemas de Controle em Rede com Perdas de Dados",
+      img: 'img/sistemacontr.png',
+      tech: "cplusplus",
+      linktxt: "Source",
+      link: "https://github.com/danieltak/PlataformaControlePerdaDados",
+      repotxt: "TCC",
+      repo: "https://1drv.ms/b/s!AoT5hCYy1tLhgv8E9i-D1b0P6COPjA?e=tujKZ8" }, /*#__PURE__*/
+
+    React.createElement("small", null, "C++."), /*#__PURE__*/
+    React.createElement("p", null, "Esta plataforma permite simular a perda de pacotes para análise de desempenho do sistema de controle realimentado. Diversos experimentos foram realizados variando-se o tempo de amostragem e a probabilidade de perda de pacotes.")),
+
+
+    /*
+      Fliperama
+    */
+
+      React.createElement(Project, {
+        title: "Fliperama.",
+        img: 'img/arcade.jpg',
+        tech: "cplusplus linux",
+        linktxt: "RetroPie",
+        link: "https://retropie.org.uk/",
+        repotxt: "Source",
+        repo: "https://github.com/RetroPie" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "C++, Linux e RetroArch."), /*#__PURE__*/
+      React.createElement("p", null, "Criação de video game com o Raspberry Pi em SO Linux, consoles inclusos: Fliperama, Super Nintendo, Nintendo 64 e Game Boy.")),
 
 
     /*
