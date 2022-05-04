@@ -556,10 +556,10 @@ const Footer = props => {
 const SocialLinks = props => {
   return /*#__PURE__*/(
     React.createElement("div", { className: "social" }, /*#__PURE__*/
-    React.createElement("ul", { className: "social-wrapper" }, /*#__PURE__*/
+    React.createElement("div", { className: "social-wrapper" }, /*#__PURE__*/
 
     /*#LinkedIn*/
-    React.createElement("li", { className: "icon linkedin" }, /*#__PURE__*/
+    React.createElement("li", { className: "ico linkedin" }, /*#__PURE__*/
     React.createElement("a", {
       href: "https://www.linkedin.com/in/daniel-takeshi-watanabe/",
       target: "_blank",
@@ -571,7 +571,7 @@ const SocialLinks = props => {
     React.createElement("i", { className: "fab fa-linkedin-in" })))),
 
     /*#Github*/
-    React.createElement("li", { className: "icon github" }, /*#__PURE__*/
+    React.createElement("li", { className: "ico github" }, /*#__PURE__*/
     React.createElement("a", {
       href: "https://github.com/danieltak",
       target: "_blank",
@@ -583,7 +583,7 @@ const SocialLinks = props => {
     React.createElement("i", { className: "fab fa-github" })))),
 
     /*#Stackexchange*/
-    React.createElement("li", { className: "icon stackexchange" }, /*#__PURE__*/
+    React.createElement("li", { className: "ico stackexchange" }, /*#__PURE__*/
     React.createElement("a", {
       href: "https://stackexchange.com/users/10431195/danieltakeshi",
       target: "_blank",
