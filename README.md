@@ -5,9 +5,10 @@
 <h1 align="center">Greetings 👋, I'm Daniel Watanabe</h1>
 <h3 align="center">A passionate developer and engineer from Brazil</h3>
 
-https://github-readme-stats.vercel.app/api/top-langs/?username=danieltak&layout=compact&theme=dracula
-
-https://github-readme-stats.vercel.app/api?username=danieltak&show_icons=true&theme=dracula
+<div>
+  <img width=400em src="https://github-readme-stats.vercel.app/api?username=danieltak&show_icons=true&theme=dracula&include_all_commits=true&count_private=true"/>
+  <img width=400em src="https://github-readme-stats.vercel.app/api/top-langs/?username=danieltak&layout=compact&hide_borders=true&theme=dracula"/>
+</div>
 
 <h3 align="left">Connect with me:</h3>
 
