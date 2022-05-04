@@ -505,32 +505,25 @@ const Contact = props => {
     React.createElement("div", { className: "container" }, /*#__PURE__*/
     React.createElement("div", { className: "heading-wrapper" }, /*#__PURE__*/
     React.createElement("div", { className: "heading" }, /*#__PURE__*/
-    React.createElement("p", { className: "title" }, "Want to ", /*#__PURE__*/
-    React.createElement("br", null), "contact me?"), /*#__PURE__*/
+    React.createElement("p", { className: "title" }, "Deseja ", /*#__PURE__*/
+    React.createElement("br", null), "entrar em contato?"), /*#__PURE__*/
 
 
     React.createElement("p", { className: "separator" }), /*#__PURE__*/
-    React.createElement("p", { className: "subtitle" }, "Please, use the form below or send an email to ",
+    React.createElement("p", { className: "subtitle" }, "Por gentileza, envie um e-mail para ",
     '', /*#__PURE__*/
-    React.createElement("span", { className: "mail" }, "web", /*#__PURE__*/
+    React.createElement("span", { className: "mail" }, "danielwatanabe", /*#__PURE__*/
 
-    React.createElement("i", { className: "fas fa-at at" }), "yagoestevez", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-at at" }), "engeletricista", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-circle dot" }), "com", /*#__PURE__*/
+    React.createElement("i", { className: "fas fa-circle dot" }), "br"), "")), /*#__PURE__*/
 
-    React.createElement("i", { className: "fas fa-circle dot" }), "com"), ":")), /*#__PURE__*/
-
-
+    React.createElement("p", { className: "subtitle" }, "Ou entre em contato pelas redes socias:"),
 
 
 
     React.createElement(SocialLinks, null)), /*#__PURE__*/
-
-    React.createElement("form", { id: "contact-form", action: "#" }, /*#__PURE__*/
-    React.createElement("input", { placeholder: "Name", name: "name", type: "text", required: true }), /*#__PURE__*/
-    React.createElement("input", { placeholder: "Email", name: "email", type: "email", required: true }), /*#__PURE__*/
-    React.createElement("textarea", { placeholder: "Message", type: "text", name: "message" }), /*#__PURE__*/
-    React.createElement("input", { className: "button", id: "submit", value: "Submit", type: "submit" })))));
-
-
+    )));
 
 
 };
@@ -546,7 +539,7 @@ const Footer = props => {
     React.createElement("footer", null, /*#__PURE__*/
     React.createElement("div", { className: "wrapper" }, /*#__PURE__*/
     React.createElement("h3", null, "THANKS FOR VISITING"), /*#__PURE__*/
-    React.createElement("p", null, "\xA9 ", new Date().getFullYear(), " Yago Est\xE9vez."), /*#__PURE__*/
+    React.createElement("p", null, "\xA9 ", new Date().getFullYear(), "Daniel Watanabe."), /*#__PURE__*/
     React.createElement(SocialLinks, null))));
 
 
@@ -563,33 +556,45 @@ const Footer = props => {
 const SocialLinks = props => {
   return /*#__PURE__*/(
     React.createElement("div", { className: "social" }, /*#__PURE__*/
+    React.createElement("ul", { className: "social-wrapper" }, /*#__PURE__*/
+
+    /*#LinkedIn*/
+    React.createElement("li", { className: "icon linkedin" }, /*#__PURE__*/
     React.createElement("a", {
-      href: "https://twitter.com/yagoestevez",
+      href: "https://www.linkedin.com/in/daniel-takeshi-watanabe/",
       target: "_blank",
-      rel: "noopener noreferrer",
-      title: "Link to author's Twitter profile" },
+      title: "LinkedIn" },
 
     ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-twitter" })), /*#__PURE__*/
+    React.createElement("span", { className: "tooltip" }, "LinkedIn"), /*#__PURE__*/
+    React.createElement("span", "",/*#__PURE__*/
+    React.createElement("i", { className: "fab fa-linkedin-in" })))),
 
+    /*#Github*/
+    React.createElement("li", { className: "icon github" }, /*#__PURE__*/
     React.createElement("a", {
-      id: "profile-link",
-      href: "https://github.com/yagoestevez",
+      href: "https://github.com/danieltak",
       target: "_blank",
-      rel: "noopener noreferrer",
-      title: "Link to author's GitHub Profile" },
+      title: "GitHub" },
 
     ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-github" })), /*#__PURE__*/
+    React.createElement("span", { className: "tooltip" }, "GitHub"), /*#__PURE__*/
+    React.createElement("span", "",/*#__PURE__*/
+    React.createElement("i", { className: "fab fa-github" })))),
 
+    /*#Stackexchange*/
+    React.createElement("li", { className: "icon stackexchange" }, /*#__PURE__*/
     React.createElement("a", {
-      href: "https://codepen.io/yagoestevez",
+      href: "https://stackexchange.com/users/10431195/danieltakeshi",
       target: "_blank",
-      rel: "noopener noreferrer",
-      title: "Link to author's Codepen Profile" },
+      title: "StackExchange" },
 
     ' ', /*#__PURE__*/
-    React.createElement("i", { className: "fab fa-codepen" }))));
+    React.createElement("span", { className: "tooltip" }, "StackExchange"), /*#__PURE__*/
+    React.createElement("span", "",/*#__PURE__*/
+    React.createElement("i", { className: "fab fa-stack-exchange" })))),
+
+  )));
 
 
 
@@ -626,9 +631,7 @@ class App extends React.Component {constructor(...args) {super(...args);_defineP
       React.createElement(About, null), /*#__PURE__*/
       React.createElement(Projects, null), /*#__PURE__*/
       React.createElement(Contact, null), /*#__PURE__*/
-
       React.createElement(Footer, null))
-
       );
       
 
