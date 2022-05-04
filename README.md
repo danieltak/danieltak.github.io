@@ -1,9 +1,13 @@
 # danieltak.github.io
 
-* [Clique para verificar a página de Portfolio](https://danieltak.github.io)
+* [Curriculum Vitae (CV) com Portfolio](https://danieltak.github.io)
 
 <h1 align="center">Greetings 👋, I'm Daniel Watanabe</h1>
 <h3 align="center">A passionate developer and engineer from Brazil</h3>
+
+https://github-readme-stats.vercel.app/api/top-langs/?username=danieltak&layout=compact&theme=dracula
+
+https://github-readme-stats.vercel.app/api?username=danieltak&show_icons=true&theme=dracula
 
 <h3 align="left">Connect with me:</h3>
 
