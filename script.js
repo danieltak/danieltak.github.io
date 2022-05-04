@@ -344,6 +344,23 @@ const Projects = props => {
 
 
     /*
+      Monografia Pós Graduação
+    */
+
+      React.createElement(Project, {
+        title: "Contador de Sementes com Visão Computacional",
+        img: 'img/watershed.png',
+        tech: "python",
+        linktxt: "Source",
+        link: "https://github.com/danieltak/SeedCounter",
+        repotxt: "Monografia",
+        repo: "https://1drv.ms/b/s!AoT5hCYy1tLhg-pMp7BQHqfch3wYvA?e=RlyMEC" }, /*#__PURE__*/
+  
+      React.createElement("small", null, "Python."), /*#__PURE__*/
+      React.createElement("p", null, "Desenvolvido um sistema de contagem de sementes de soja baseado em visão computacional. As principais etapas do algoritmo são: remoção de ruído, segmentação baseada em cor no espaço HSV, operações morfológicas, watershed transform e rotulação.")),
+
+      
+    /*
       Fliperama
     */
 
