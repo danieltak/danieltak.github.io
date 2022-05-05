@@ -365,7 +365,7 @@ const Projects = props => {
     */
 
       React.createElement(Project, {
-        title: "Fliperama.",
+        title: "Fliperama",
         img: 'img/arcade.jpg',
         tech: "cplusplus linux",
         linktxt: "RetroPie",
@@ -375,23 +375,6 @@ const Projects = props => {
   
       React.createElement("small", null, "C++, Linux e RetroArch."), /*#__PURE__*/
       React.createElement("p", null, "Criação de video game com o Raspberry Pi em SO Linux, consoles inclusos: Fliperama, Super Nintendo, Nintendo 64 e Game Boy.")),
-
-
-    /*
-      Ogame
-    */
-
-    React.createElement(Project, {
-      title: "Ogame Galaxy Tool.",
-      img: 'img/Ogame.jpg',
-      tech: "php js css",
-      linktxt: "Website",
-      link: "http://www.galaxytool.eu/",
-      repotxt: "Source",
-      repo: "https://github.com/supermopf/galaxytool" }, /*#__PURE__*/
-
-    React.createElement("small", null, "PHP, JS e CSS."), /*#__PURE__*/
-    React.createElement("p", null, "Implementação de ferramenta auxiliar para o jogo Ogame.")),
 
 
     /*
