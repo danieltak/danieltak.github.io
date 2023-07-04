@@ -152,9 +152,6 @@ const About = props => {
     React.createElement("p", null, "Outros conhecimentos: programação em Ladder e STL (CLP), tradução de projetos Open Source no Transifex, tradução do regex101.com, conhecimento sobre os softwares Matlab, Photoshop, Adobe Fireworks, GIMP, Inkscape e After Effects, programação de protótipos no Arduino e Raspberry PI, escrever TCC na norma ABNT em LaTeX.")), /*#__PURE__*/
 
 
-
-
-
     React.createElement("div", { className: "desc" }, /*#__PURE__*/
     React.createElement("h4", { className: "subtitle" }, "Também um engenheiro."), /*#__PURE__*/
     React.createElement("p", null, "Trabalhei com tecnologias novas e projetos industriais, creio que a experiência de projetos na engenharia não é diferente da programação. Por exemplo, ao construir uma fábrica nova você inicia pelas utilidades (energia, água, insumos) e depois o processo utiliza o produto das utilidades. Na programação o mesmo ocorre, ao fazer um website é necessário primeiro definir as utilidades (email, mapa, APIs, banco de dados) para depois programar as funcionalidades."), /*#__PURE__*/
@@ -162,7 +159,18 @@ const About = props => {
     React.createElement("p", null, "Na manutenção também é análogo, em que devemos realizá-la com cautela e de maneira organizada, comunicando entre todos os setores, pois a fábrica não pode parar. O mesmo ocorre na manutenção de aplicativos ou sistemas operando."), /*#__PURE__*/
 
 
-    React.createElement("p", null, "A experiência de programação de sistemas embarcados forneceu uma visão boa da otimização, pois em muitas aplicações o tempo de processamento deve ser menor do que 50 ms e o custo do processador baixo. O contato direto com clientes e vendedores me ensinou a me comunicar melhor."))))));
+    React.createElement("p", null, "A experiência de programação de sistemas embarcados forneceu uma visão boa da otimização, pois em muitas aplicações o tempo de processamento deve ser menor do que 50 ms e o custo do processador baixo. O contato direto com clientes e vendedores me ensinou a me comunicar melhor.")),
+    
+    React.createElement("div", { className: "desc full" }, /*#__PURE__*/
+    React.createElement("iframe", 
+                                  {                                   
+                                   src: "https://ionicabizau.github.io/github-profile-languages/api.html?danieltak" },
+                        null))
+    )
+    )
+    )
+    
+    );
 
 
 };

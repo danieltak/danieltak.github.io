@@ -1543,3 +1543,11 @@ footer .wrapper {
 .social-wrapper a {
   color: #ffffff !important;
 }
+
+iframe {
+  display: block;
+  border-style:none;
+  width: 70vh;
+  height: 70vh;
+  margin: 0 auto;
+}
