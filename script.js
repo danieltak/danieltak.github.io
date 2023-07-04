@@ -163,8 +163,10 @@ const About = props => {
     
     React.createElement("div", { className: "desc full" }, /*#__PURE__*/
     React.createElement("iframe", 
-                                  {                                   
-                                   src: "https://ionicabizau.github.io/github-profile-languages/api.html?danieltak" },
+                                  { 
+                                    
+                                    scrolling: "no",                                   
+                                    src: "https://ionicabizau.github.io/github-profile-languages/api.html?danieltak" },
                         null))
     )
     )

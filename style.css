@@ -1547,7 +1547,9 @@ footer .wrapper {
 iframe {
   display: block;
   border-style:none;
-  width: 70vh;
-  height: 70vh;
   margin: 0 auto;
+  padding: 0 auto;
+
+  height: 500px;
+  width: 100%;
 }
